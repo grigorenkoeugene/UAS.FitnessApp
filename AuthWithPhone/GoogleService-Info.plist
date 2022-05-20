@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>920532251573-fiq3pj6usn182jacfaiajen8007n32kr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.920532251573-fiq3pj6usn182jacfaiajen8007n32kr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC_6CpridkQbefZMPJRPyrVhd9URfYu0c8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>920532251573</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>authWithPhone.AuthWithPhone</string>
+	<key>PROJECT_ID</key>
+	<string>authwithphone-1c1ef</string>
+	<key>STORAGE_BUCKET</key>
+	<string>authwithphone-1c1ef.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:920532251573:ios:8be65d75c35bcf3e9b9ffc</string>
+	<key>DATABASE_URL</key>
+	<string>https://authwithphone-1c1ef.firebaseio.com</string>
+</dict>
+</plist>
