@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15C91776CDBA543A1BE85A33 /* Pods_AuthWithPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF8BB4F3D6E6C6917C5E286 /* Pods_AuthWithPhone.framework */; };
+		1C196EAD33E62C3433841316 /* Pods_UAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5DB1A1D8E5459F97A29A6A /* Pods_UAS.framework */; };
 		4510652327D0EFD400B01B06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4510652227D0EFD400B01B06 /* GoogleService-Info.plist */; };
 		45729BBD27E340E700565FA1 /* TableTypeTrainingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45729BBC27E340E700565FA1 /* TableTypeTrainingsVC.swift */; };
 		45BF1C4E282AE7A600F0E51D /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF1C4D282AE7A600F0E51D /* UsersData.swift */; };
 		45DD33CC27F3139B00F91CFB /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DD33CB27F3139B00F91CFB /* FirebaseData.swift */; };
 		45DF364B280EC2F500EA409D /* OwnTrainingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DF364A280EC2F500EA409D /* OwnTrainingsVC.swift */; };
-		8402BE3B257529E8003BD502 /* PhoneNamberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402BE3A257529E8003BD502 /* PhoneNamberVC.swift */; };
+		8402BE3B257529E8003BD502 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402BE3A257529E8003BD502 /* PhoneNumberVC.swift */; };
 		84047BCE2563EF0D00A3BB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84047BCD2563EF0D00A3BB7D /* AppDelegate.swift */; };
 		84047BD02563EF0D00A3BB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84047BCF2563EF0D00A3BB7D /* SceneDelegate.swift */; };
 		84047BD22563EF0D00A3BB7D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84047BD12563EF0D00A3BB7D /* AuthVC.swift */; };
@@ -31,7 +31,7 @@
 		45BF1C4D282AE7A600F0E51D /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		45DD33CB27F3139B00F91CFB /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		45DF364A280EC2F500EA409D /* OwnTrainingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnTrainingsVC.swift; sourceTree = "<group>"; };
-		8402BE3A257529E8003BD502 /* PhoneNamberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNamberVC.swift; sourceTree = "<group>"; };
+		8402BE3A257529E8003BD502 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 		84047BCA2563EF0D00A3BB7D /* UAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84047BCD2563EF0D00A3BB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84047BCF2563EF0D00A3BB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +43,11 @@
 		8404DE432584D97B0062CB33 /* CodeValidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeValidVC.swift; sourceTree = "<group>"; };
 		8404DE452584F4A50062CB33 /* ContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVC.swift; sourceTree = "<group>"; };
 		8409E980258903140085826A /* AdminMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMenuVC.swift; sourceTree = "<group>"; };
+		86D5D552479F1CB28921FC02 /* Pods-UAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAS.release.xcconfig"; path = "Target Support Files/Pods-UAS/Pods-UAS.release.xcconfig"; sourceTree = "<group>"; };
+		ABC0D402965432871E11F063 /* Pods-UAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAS.debug.xcconfig"; path = "Target Support Files/Pods-UAS/Pods-UAS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD96F76677A7B5C497D0B5B9 /* Pods-AuthWithPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithPhone.release.xcconfig"; path = "Target Support Files/Pods-AuthWithPhone/Pods-AuthWithPhone.release.xcconfig"; sourceTree = "<group>"; };
-		BDF8BB4F3D6E6C6917C5E286 /* Pods_AuthWithPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA0E22DD7BDDE8FA39BD705 /* Pods-AuthWithPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithPhone.debug.xcconfig"; path = "Target Support Files/Pods-AuthWithPhone/Pods-AuthWithPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		DB5DB1A1D8E5459F97A29A6A /* Pods_UAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C91776CDBA543A1BE85A33 /* Pods_AuthWithPhone.framework in Frameworks */,
+				1C196EAD33E62C3433841316 /* Pods_UAS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				84047BD12563EF0D00A3BB7D /* AuthVC.swift */,
-				8402BE3A257529E8003BD502 /* PhoneNamberVC.swift */,
+				8402BE3A257529E8003BD502 /* PhoneNumberVC.swift */,
 				8404DE452584F4A50062CB33 /* ContentVC.swift */,
 				8404DE432584D97B0062CB33 /* CodeValidVC.swift */,
 				45729BBC27E340E700565FA1 /* TableTypeTrainingsVC.swift */,
@@ -120,7 +122,7 @@
 		9D31CE41295FDDE4C70E7975 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDF8BB4F3D6E6C6917C5E286 /* Pods_AuthWithPhone.framework */,
+				DB5DB1A1D8E5459F97A29A6A /* Pods_UAS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +132,8 @@
 			children = (
 				CBA0E22DD7BDDE8FA39BD705 /* Pods-AuthWithPhone.debug.xcconfig */,
 				BD96F76677A7B5C497D0B5B9 /* Pods-AuthWithPhone.release.xcconfig */,
+				ABC0D402965432871E11F063 /* Pods-UAS.debug.xcconfig */,
+				86D5D552479F1CB28921FC02 /* Pods-UAS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -210,15 +214,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthWithPhone/Pods-AuthWithPhone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UAS/Pods-UAS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthWithPhone/Pods-AuthWithPhone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UAS/Pods-UAS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthWithPhone/Pods-AuthWithPhone-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UAS/Pods-UAS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D29258437FE468CA1C539E14 /* [CP] Check Pods Manifest.lock */ = {
@@ -236,7 +240,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AuthWithPhone-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UAS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -258,7 +262,7 @@
 				45DF364B280EC2F500EA409D /* OwnTrainingsVC.swift in Sources */,
 				8404DE462584F4A50062CB33 /* ContentVC.swift in Sources */,
 				8404DE442584D97B0062CB33 /* CodeValidVC.swift in Sources */,
-				8402BE3B257529E8003BD502 /* PhoneNamberVC.swift in Sources */,
+				8402BE3B257529E8003BD502 /* PhoneNumberVC.swift in Sources */,
 				45DD33CC27F3139B00F91CFB /* FirebaseData.swift in Sources */,
 				84047BD02563EF0D00A3BB7D /* SceneDelegate.swift in Sources */,
 			);
@@ -404,7 +408,7 @@
 		};
 		84047BDF2563EF1100A3BB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBA0E22DD7BDDE8FA39BD705 /* Pods-AuthWithPhone.debug.xcconfig */;
+			baseConfigurationReference = ABC0D402965432871E11F063 /* Pods-UAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,7 +428,7 @@
 		};
 		84047BE02563EF1100A3BB7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD96F76677A7B5C497D0B5B9 /* Pods-AuthWithPhone.release.xcconfig */;
+			baseConfigurationReference = 86D5D552479F1CB28921FC02 /* Pods-UAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,8 +10,8 @@ import UIKit
 import FirebaseAuth
 
 class ContentVC: UIViewController {
-    @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var adminButton: UIButton!
     @IBOutlet weak var airoButton: UIButton!
     @IBOutlet weak var stretchingButton: UIButton!

@@ -18,7 +18,7 @@ class AuthVC: UIViewController {
     
     @IBAction func authTapped() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dvc = storyboard.instantiateViewController(withIdentifier: "PhoneNamberVC") as! PhoneNamberVC
+        let dvc = storyboard.instantiateViewController(withIdentifier: "PhoneNumberVC") as! PhoneNumberVC
         self.present(dvc, animated: true)
     }
     

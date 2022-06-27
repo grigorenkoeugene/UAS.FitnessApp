@@ -121,6 +121,7 @@ class OwnTraining: UITableViewController {
                         let userOrderTrening = arrayData[indexPath.section][indexPath.row].countPeople! + 1
                         self.data.child("Airostretching").child(arrayData[indexPath.section][indexPath.row].id!).child("countPeople").setValue(userOrderTrening)
                         self.data.child("Airostretching").child(arrayData[indexPath.section][indexPath.row].id!).child("users").child(key).setValue(nil)
+                        firebaseDataA.remove(at: indexPath.row)
                     }
                 }
             case "Stretching":
@@ -129,14 +130,17 @@ class OwnTraining: UITableViewController {
                         let userOrderTrening = arrayData[indexPath.section][indexPath.row].countPeople! + 1
                         self.data.child("Stretching").child(arrayData[indexPath.section][indexPath.row].id!).child("countPeople").setValue(userOrderTrening)
                         self.data.child("Stretching").child(arrayData[indexPath.section][indexPath.row].id!).child("users").child(key).setValue(nil)
+                        firebaseDataS.remove(at: indexPath.row)
+
                     }
                 }
             case "Fitness":
                 for (key, data) in arrayData[indexPath.section][indexPath.row].user!.userId! {
                     if data == uid {
                         let userOrderTrening = arrayData[indexPath.section][indexPath.row].countPeople! + 1
-                        self.data.child("Stretching").child(arrayData[indexPath.section][indexPath.row].id!).child("countPeople").setValue(userOrderTrening)
-                        self.data.child("Stretching").child(arrayData[indexPath.section][indexPath.row].id!).child("users").child(key).setValue(nil)
+                        self.data.child("Fitness").child(arrayData[indexPath.section][indexPath.row].id!).child("countPeople").setValue(userOrderTrening)
+                        self.data.child("Fitness").child(arrayData[indexPath.section][indexPath.row].id!).child("users").child(key).setValue(nil)
+                        firebaseDataF.remove(at: indexPath.row)
                     }
                 }
             default:

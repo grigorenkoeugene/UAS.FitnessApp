@@ -1,5 +1,5 @@
 //
-//  PhoneNamberVC.swift
+//  PhoneNumberVC.swift
 //  AuthWithPhone
 //
 //  Created by Admin on 30/11/2020.
@@ -11,17 +11,17 @@ import FlagPhoneNumber
 import FirebaseAuth
 import Firebase
 
-class PhoneNamberVC: UIViewController {
+class PhoneNumberVC: UIViewController {
     
-    var phoneNamber: String?
+    var phoneNumber: String?
 
     @IBOutlet weak var PhoneNamberTextField: FPNTextField!
     @IBOutlet weak var fetchCodeButton: UIButton!
     
     @IBAction func fetchCodeTapped(_ sender: UIButton) {
-        guard phoneNamber != nil else {return}
+        guard phoneNumber != nil else {return}
         Auth.auth().languageCode = "ru"
-        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNamber!, uiDelegate: nil){
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber!, uiDelegate: nil){
             (verificationID, error) in
             if error != nil {
                 print(error?.localizedDescription ?? "is empty")
@@ -58,14 +58,14 @@ class PhoneNamberVC: UIViewController {
 
 }
 
-extension PhoneNamberVC: FPNTextFieldDelegate {
+extension PhoneNumberVC: FPNTextFieldDelegate {
     
     func fpnDidValidatePhoneNumber(textField: FPNTextField, isValid: Bool) {
     if isValid {
             fetchCodeButton.alpha = 1
             fetchCodeButton.isEnabled = true
 
-            phoneNamber = textField.getFormattedPhoneNumber(format: .International )
+        phoneNumber = textField.getFormattedPhoneNumber(format: .International )
         } else {
         fetchCodeButton.alpha = 0.5
             fetchCodeButton.isEnabled = false

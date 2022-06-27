@@ -16,7 +16,7 @@ var buttonTag: Int?
 class TableTypeTrainingsVC: UITableViewController {
     let data = Database.database().reference()
     var firebaseData = [Direction]()
-    
+    var userOrderTrening = Int() 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -42,10 +42,12 @@ class TableTypeTrainingsVC: UITableViewController {
                 if dataDirection.countPeople! <= 0 {
                     self.alertCountPeople()
                 } else if array.contains(uid) != true{
-                    let userOrderTrening = dataDirection.countPeople! - 1
-                    data.child(training).child(dataDirection.id!).child("countPeople").setValue(userOrderTrening)
+                    self.userOrderTrening = dataDirection.countPeople! - 1
+                    data.child(training).child(dataDirection.id!).child("countPeople").setValue(self.userOrderTrening)
                     data.child(training).child(dataDirection.id!).child("users").childByAutoId().setValue(uid)
                     self.alertSingUp()
+                    print(self.userOrderTrening, dataDirection.countPeople!)
+//                    self.tableView.reloadData()
                     
                 } else {
                     self.alertYouSingUpYet()
@@ -80,6 +82,7 @@ class TableTypeTrainingsVC: UITableViewController {
         case 1:
             cell.textLabel?.text = "Тренер: " + dataDirection.couch!
             cell.detailTextLabel?.text = (dataDirection.time! + "; Количество мест: " + String(dataDirection.countPeople!))
+
         case 2:
             cell.textLabel?.text = "Тренер: " + dataDirection.couch!
             cell.detailTextLabel?.text = (dataDirection.time! + "; Количество мест: " + String(dataDirection.countPeople!))

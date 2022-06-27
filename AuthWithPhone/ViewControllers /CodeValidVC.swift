@@ -44,14 +44,12 @@ class CodeValidVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setapConfig()
     }
     
     private func setapConfig() {
         checkCodeButton.alpha = 0.5
         checkCodeButton.isEnabled = false
-        
         codeTextView.delegate = self
     }
 
